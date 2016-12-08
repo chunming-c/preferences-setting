@@ -1,0 +1,17 @@
+// 將您的設定放入此檔案中以覆寫預設值
+{
+  // 與 Tab 相等的空格數量。當 `editor.detectIndentation` 已開啟時，會根據檔案內容覆寫此設定。
+   "editor.tabSize": 2,
+
+  // 控制字型大小 (以像素為單位)    
+  "editor.fontSize": 14,
+
+   // 調整視窗的縮放比例。原始大小為 0，而且每個向上增量 (例如 1) 或向下增量 (例如 -1) 代表放大或縮小 20%。您也可以輸入小數，更細微地調整縮放比例。
+  "window.zoomLevel": 1
+  
+  // 控制編輯器是否應顯示縮排輔助線
+  "editor.renderIndentGuides": true,
+
+  // 控制編輯器是否應顯示控制字元
+   "editor.renderControlCharacters": true
+}
