@@ -29,7 +29,7 @@ via [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) a
 
 
 1. install zsh : built-in or brew
-2. Verify installation by running zsh --version. Expected result: zsh 4.3.9 or more recent.
+2. Verify installation by running ```zsh --version```. Expected result: zsh 4.3.9 or more recent.
 3. Make it your default shell:
 ```shell
 $ chsh -s $(/bin/zsh)
