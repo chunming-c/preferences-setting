@@ -1,6 +1,6 @@
-PCKAGES="
+PACKAGES="
 file-icons 
-linter-eslin
+linter-eslint
 nuclide 
 autocomplete-paths 
 language-babel

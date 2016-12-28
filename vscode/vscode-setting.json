@@ -7,7 +7,7 @@
   "editor.fontSize": 14,
 
    // 調整視窗的縮放比例。原始大小為 0，而且每個向上增量 (例如 1) 或向下增量 (例如 -1) 代表放大或縮小 20%。您也可以輸入小數，更細微地調整縮放比例。
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
   
   // 控制編輯器是否應顯示縮排輔助線
   "editor.renderIndentGuides": true,
