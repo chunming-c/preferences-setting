@@ -71,3 +71,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | b
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 ```
+
+### Vundle
+1. First, install vundle by [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
+
+2. After install successfully, follow the step by
+[vimfiles](https://github.com/Chun-MingChen/vimfiles).
