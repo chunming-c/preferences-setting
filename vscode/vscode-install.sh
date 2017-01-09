@@ -10,6 +10,7 @@ qinjia.view-in-browser
 robertohuertasm.vscode-icons 
 rebornix.Ruby
 misogi.ruby-rubocop
+PeterJausovec.vscode-docker
 "
 
 for EXTENSION in $EXTENSIONS
