@@ -2,9 +2,14 @@
 # preferences-setting
 > my personal preferences setting :)
 
+* [atom packages install](#atom-packages-install)
+* [vscode extension install](#vscode-extension-install)
+* [oh my zsh](#oh-my-zsh)
+* [nvm install](#nvm-install)
+* [Vundle install](#vundle-install)
 
 ## Setup
-### atom-packages-install
+### atom packages install
 ```shell
 ./atom-install.sh
 
@@ -55,7 +60,7 @@ $ mv lambda-mod-zsh-theme/lambda-mod.zsh-theme ./themes/
 ZSH_THEME="lambda-mod"
 ```
 
-### nvm
+### nvm install
 
 1. First,
 [Install Command Line Tools in OSX](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
@@ -72,7 +77,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
-### Vundle
+### Vundle install
 1. First, install vundle by [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 
 2. After install successfully, follow the step by
