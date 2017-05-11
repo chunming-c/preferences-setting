@@ -11,6 +11,12 @@ robertohuertasm.vscode-icons
 rebornix.Ruby
 misogi.ruby-rubocop
 PeterJausovec.vscode-docker
+waderyan.gitblame
+eamodio.gitlens
+shanoor.vscode-nginx
+robinbentley.sass-indented
+shinnn.stylelint
+cybai.yaml-key-viewer
 "
 
 for EXTENSION in $EXTENSIONS
