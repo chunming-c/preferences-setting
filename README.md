@@ -84,7 +84,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 **Custom setting**
 
-1. Short command by `alias`
+1. Short command by `alias`. e.g. try to set alias `ls` to `colorls` in `~/.zshrc` by default.
 ```sh
 alias ls='colorls'
 ```
