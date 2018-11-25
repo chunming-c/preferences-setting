@@ -1,6 +1,6 @@
 
 # preferences-setting
-> my personal preferences setting :)
+> My personal preferences setting 🎉
 
 * [atom packages install](#atom-packages-install)
 * [vscode extension install](#vscode-extension-install)
@@ -12,7 +12,6 @@
 ### atom packages install
 ```shell
 ./atom-install.sh
-
 ```
 
 ### vscode extension install
@@ -50,15 +49,51 @@ $ chsh -s $(/bin/zsh)
 
 
 1. clone the repository and follow the steps below.
-```shell
-$ cd ~/.oh-my-zsh/
-$ git clone https://github.com/halfo/lambda-mod-zsh-theme.git
-$ mv lambda-mod-zsh-theme/lambda-mod.zsh-theme ./themes/
-```
+   ```shell
+   $ cd ~/.oh-my-zsh/
+   $ git clone https://github.com/halfo/lambda-mod-zsh-theme.git
+   $ mv lambda-mod-zsh-theme/lambda-mod.zsh-theme ./themes/
+   ```
+
 2. overwrite ```ZSH_THEME``` in ```~/.zshrc ```. It will look like:
+   ```
+   ZSH_THEME="lambda-mod"
+   ```
+
+#### [Colorls](https://github.com/athityakumar/colorls)
+This enhances the terminal command `ls` with color and icons.
+
+1. Make sure you've installed `ruby` and [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+```sh
+# Install nerd-fonts by homebrew
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
 ```
-ZSH_THEME="lambda-mod"
+
+2. Install the `colorls` ruby gem
+```sh
+gem install colorls
 ```
+
+3. Enable tab completion for flags by entering following line to `~/.zshrc`
+```sh
+source $(dirname $(gem which colorls))/tab_complete.sh
+```
+
+4. Then all set and enjoy.
+
+**Custom setting**
+
+1. Short command by `alias`
+```sh
+alias ls='colorls'
+```
+
+2. Make your custom style
+```sh
+code $(dirname $(gem which colorls))/yaml
+```
+
 
 ### nvm install
 
