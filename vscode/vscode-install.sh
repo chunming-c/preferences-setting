@@ -17,6 +17,11 @@ shanoor.vscode-nginx
 robinbentley.sass-indented
 shinnn.stylelint
 cybai.yaml-key-viewer
+ms-vscode.go
+justusadam.language-haskell
+pkief.material-icon-theme
+equinusocio.vsc-material-theme
+vscodevim.vim
 "
 
 for EXTENSION in $EXTENSIONS
