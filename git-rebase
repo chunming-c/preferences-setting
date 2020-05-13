@@ -1,0 +1,31 @@
+#!/bin/bash
+
+TARGET_BRANCH=$1
+REMOTE=${2:-origin}
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+if [ -z $TARGET_BRANCH ]; then
+  echo "Please specify target branch. For example: ./git-rebase dev [remote]"
+  exit 1
+fi
+
+# --exit-code
+# Make the program exit with codes similar to diff(1). That is, it exits with 1
+# if there were differences and 0 means no differences.
+git diff --name-only --diff-filter=M --quiet --exit-code
+hasModifiedFiles=$?
+
+if [[ $hasModifiedFiles == 1 ]]; then
+  echo "Stash changes"
+  git stash
+fi
+
+git checkout $TARGET_BRANCH
+git pull $REMOTE $TARGET_BRANCH
+git checkout $CURRENT_BRANCH
+git rebase $TARGET_BRANCH
+
+if [[ $hasModifiedFiles == 1 ]]; then
+  echo "Pop up changes"
+  git stash pop
+fi
