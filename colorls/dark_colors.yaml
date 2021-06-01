@@ -1,11 +1,17 @@
 # Main Colors
 unrecognized_file: white
 recognized_file:   white
+executable_file:   green
 dir:               dodgerblue
 
 # Link
 dead_link: red
 link:      cyan
+
+# special files
+socket:    green
+blockdev:  green
+chardev:   green
 
 # Access Modes
 write:     darkkhaki
@@ -14,9 +20,9 @@ exec:      red
 no_access: indianred
 
 # Age
-day_old:     white
-hour_old:    white
-no_modifier: white
+day_old:     mediumspringgreen
+hour_old:    lime
+no_modifier: seagreen
 
 # File Size
 file_large:  orange

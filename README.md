@@ -61,21 +61,25 @@ $ chsh -s $(/bin/zsh)
 
 This enhances the terminal command `ls` with color and icons.
 
-1. Make sure you've installed `ruby` and [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+1. Install `ruby`
+
+2. Install [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+
+Note for iTerm2 users - Please enable the Nerd Font at `iTerm2 > Preferences > Profiles > Text > Non-ASCII font > Hack Regular Nerd Font Complete`.
 
 ```sh
 # Install nerd-fonts by homebrew
-brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
 ```
 
-2. Install the `colorls` ruby gem
+3. Install the `colorls` ruby gem
 
 ```sh
 gem install colorls
 ```
 
-3. Enable tab completion for flags by entering following line to `~/.zshrc`
+4. Enable tab completion for flags by entering following line to `~/.zshrc`
 
 ```sh
 source $(dirname $(gem which colorls))/tab_complete.sh
@@ -105,14 +109,15 @@ code $(dirname $(gem which colorls))/yaml
 2. follow the steps on [nvm](https://github.com/creationix/nvm)
 
 ```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
 
 3. edit `~/.zshrc` and add the source line to your profile
 
 ```
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
 
 ### Vundle install
