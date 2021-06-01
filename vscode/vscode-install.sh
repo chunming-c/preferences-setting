@@ -1,10 +1,14 @@
 language="
 rebornix.Ruby
-ms-vscode.go
 justusadam.language-haskell
 sbrink.elm
-william-voyek.vscode-nginx
-ms-kubernetes-tools.vscode-kubernetes-tools
+dzannotti.vscode-babel-coloring
+fwcd.kotlin
+golang.go
+kumar-harsh.graphql-for-vscode
+mathiasfrohlich.Kotlin
+mitaki28.vscode-clang
+rust-lang.rust
 "
 
 developing="
@@ -17,13 +21,18 @@ eamodio.gitlens
 donjayamanne.githistory
 qinjia.view-in-browser
 ionutvmi.path-autocomplete
-zhuangtongfa.Material-theme
 Zignd.html-css-class-completion
 abusaidm.html-snippets
-HookyQR.beautify
 cybai.yaml-key-viewer
-pkief.material-icon-theme
+Equinusocio.vsc-community-material-theme
 equinusocio.vsc-material-theme
+equinusocio.vsc-material-theme-icons
+adpyke.vscode-sql-formatter
+ms-azuretools.vscode-docker
+ms-kubernetes-tools.vscode-kubernetes-tools
+ahmadalli.vscode-nginx-conf
+william-voyek.vscode-nginx
+bungcip.better-toml
 "
 
 linter="
@@ -40,7 +49,6 @@ raynigon.nginx-formatter
 
 EXTENSIONS="${language} ${developing} ${linter} ${formatter}"
 
-for EXTENSION in $EXTENSIONS
-do
+for EXTENSION in $EXTENSIONS; do
   code --install-extension $EXTENSION
 done
