@@ -2,33 +2,17 @@
 
 > My personal preferences setting 🎉
 
-- [vscode extension install](#vscode-extension-install)
-- [oh my zsh](#oh-my-zsh)
-- [nvm install](#nvm-install)
-- [Vundle install](#vundle-install)
+- [preferences-setting](#preferences-setting)
+  - [oh my zsh](#oh-my-zsh)
+  - [iTerm2 theme](#iterm2-theme)
+  - [colorls](#colorls)
+  - [Vundle install](#vundle-install)
+  - [others](#others)
 
-## Setup
+## oh my zsh
 
-### VScode extension install
-
-1. Install vs code command tool, see [Install tutorial](https://code.visualstudio.com/docs/setup/mac)
-
-2. run the shell script to install automatically.
-
-```shell
-cd vscode
-./vscode-setting.sh
-```
-
-### oh my zsh
-
-#### install and setup as default
-
-via [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) and
-[installing-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
-
-1. install zsh : built-in or brew
-2. Verify installation by running `zsh --version`. Expected result: zsh 4.3.9 or more recent.
+1. Verify installation by running `zsh --version`. By default `zsh` should be installed. If not see [installing-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) for more detail.
+2. install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 3. Make it your default shell:
 
 ```shell
@@ -40,7 +24,7 @@ $ chsh -s $(/bin/zsh)
 4. Log out and login back again to use your new default shell.
 5. Test that it worked with `$ echo $SHELL`. Expected result: /bin/zsh
 
-#### Theme
+## iTerm2 theme
 
 - [lambda mod](https://github.com/halfo/lambda-mod-zsh-theme/)
 
@@ -57,7 +41,7 @@ $ chsh -s $(/bin/zsh)
    ZSH_THEME="lambda-mod"
    ```
 
-#### [Colorls](https://github.com/athityakumar/colorls)
+## [colorls](https://github.com/athityakumar/colorls)
 
 This enhances the terminal command `ls` with color and icons.
 
@@ -101,28 +85,15 @@ alias ls='colorls'
 code $(dirname $(gem which colorls))/yaml
 ```
 
-### nvm install
 
-1. First,
-   [Install Command Line Tools in OSX](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
-
-2. follow the steps on [nvm](https://github.com/creationix/nvm)
-
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-```
-
-3. edit `~/.zshrc` and add the source line to your profile
-
-```
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-```
-
-### Vundle install
+## Vundle install
 
 1. First, install vundle by [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
-
 2. After install successfully, follow the step by
-   [vimfiles](https://github.com/Chun-MingChen/vimfiles).
+   [vimfiles](https://github.com/chunming-c/vimfiles).
+
+
+## others
+
+- `nvm`
+- Install vs code command tool. See more detail [here](https://code.visualstudio.com/docs/setup/mac)
